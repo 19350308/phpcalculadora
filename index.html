@@ -30,6 +30,11 @@
                 <input type="reset" value="C">
                 <input type="button" value="=" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)">
                 <input type="button" value="/" onclick="document.calculator.ans.value+='/'" class="orange">
+                <br>
+                <input type="button" value="00" onclick="document.calculator.ans.value+='00'" class="gray">
+                <input type="button" value="ans" onclick="document.calculator.ans.value += document.calculator.ans.value" class="gray">
+                <input type="button" value="Pi" onclick="document.calculator.ans.value += Math.PI.toFixed(10)" class="white">
+                <input type="button" value="^" onclick="document.calculator.ans.value+='**'" class="orange">
             </form>
         </div>
     </body>
